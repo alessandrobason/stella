@@ -1,0 +1,8 @@
+#!/bin/env luajit
+
+version = _VERSION:match("%d+%.%d+")
+local dir = "/home/snarmph/Documents/c++/uni/luaprojectmanager"
+package.path = dir .. '/lua_modules/share/lua/' .. version .. '/?.lua;' .. dir .. '/lua_modules/share/lua/' .. version .. '/?/init.lua;' .. dir .. '/?.lua;' .. package.path
+package.cpath = dir .. '/lua_modules/lib/lua/' .. version .. '/?.so;' .. dir .. "/?.so;" .. package.cpath
+
+require("stella")

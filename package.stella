@@ -1,0 +1,15 @@
+return {
+    name = "stella",
+    description = "A build system for lua",
+    version = "0.1.0",
+    scripts = {},
+    repository = {
+        -- example:
+        -- type = "git"
+        -- url = "https://etc"
+    },
+    author = "snarmph",
+    dependencies = {
+        -- TODO
+    }
+}
